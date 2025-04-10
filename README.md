@@ -1,4 +1,4 @@
-# 🍔 RockyGo Customer App - Automated Test Scripts
+# 🍔 RockyGo Rider App - Automated Test Scripts
 
 This repository contains automated UI test scripts for the **Food Delivery App**, created using [Maestro](https://maestro.mobile.dev). These tests help validate key user flows and ensure the reliability of the mobile application.
 
