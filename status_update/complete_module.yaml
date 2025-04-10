@@ -1,0 +1,21 @@
+appId: com.trackerteer.grgrider
+---
+
+- assertVisible:
+    text: "Map"
+- extendedWaitUntil:
+    visible: "Back" # or any other selector
+    timeout: 10000      # Timeout in milliseconds
+- tapOn: "Back"
+- scrollUntilVisible:
+    element: "Update Status"
+- tapOn: "Update Status"
+- tapOn:  "Take Image"
+- tapOn:
+    id: "com.sec.android.app.camera:id/normal_center_button"  # Android default camera ID
+- tapOn: "OK"
+# - tapOn: ".*Comment.*"
+# - inputText:
+#     text: "Complete comment"
+# - back
+- tapOn: "Complete Order"

@@ -1,0 +1,5 @@
+appId: com.trackerteer.grgrider
+---
+
+- runFlow: "../status_update/intransit_module.yaml"
+- runFlow: "../status_update/complete_module.yaml"

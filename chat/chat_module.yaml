@@ -1,0 +1,16 @@
+appId: com.trackerteer.grgrider
+---
+
+- tapOn:
+    id: com.trackerteer.grgrider:id/image_view_chat
+- tapOn: Message
+- inputText: "I'm on the way"
+- tapOn:
+    id: com.trackerteer.grgrider:id/image_view_send
+- assertWithAI:
+    assertion: A reply is visible in the chat.
+- inputText: "Please wait. I'm coming." 
+- tapOn:
+    id: com.trackerteer.grgrider:id/image_view_send
+- back
+- back

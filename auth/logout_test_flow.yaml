@@ -1,0 +1,11 @@
+appId: com.trackerteer.grgrider
+---
+
+- launchApp
+- assertNotVisible:
+    text: "ACCEPTED"
+- tapOn: "My Account"
+- repeat: 
+    times: 2
+    commands:
+      - tapOn: "Logout"

@@ -1,0 +1,15 @@
+appId: com.trackerteer.grgrider
+---
+
+# - launchApp
+- repeat:
+    times: 50
+    commands:
+        - assertVisible: 
+            text: "Home"
+        - tapOn: 
+            text: "Tap to accept order"
+            index: 0
+        - tapOn: "Accept"
+        - runFlow: "../status_update/intransit_module.yaml"
+        - runFlow: "../status_update/complete_module.yaml"

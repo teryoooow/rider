@@ -1,0 +1,13 @@
+appId: com.trackerteer.grgrider
+---
+
+- launchApp
+- tapOn: "Email"
+- inputText:
+    text: "terelle.trackerteer+rider01@gmail.com"
+    into: "Email"
+- tapOn: "Password"
+- inputText:
+    text: "Test1234!"
+    into: "Password"
+- tapOn: "Sign in"

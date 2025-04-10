@@ -1,0 +1,8 @@
+appId: com.trackerteer.grgrider
+---
+
+- launchApp
+- assertVisible:
+    text: "Status: ACCEPTED"
+- tapOn: ".*VIEW.*"
+- runFlow: "../order/order_delivery_module.yaml"

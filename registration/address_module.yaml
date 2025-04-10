@@ -1,0 +1,30 @@
+appId: com.trackerteer.grgrider
+---
+
+- tapOn: "Number"
+- inputRandomNumber:
+    length: 3
+- tapOn: "Building"
+- inputRandomText:
+    length: 10
+- tapOn: "Street"
+- inputRandomText:
+    length: 10
+- tapOn: "District"
+- inputRandomText:
+    length: 10
+- tapOn: "Zip Code"
+- inputRandomNumber:
+    length: 4
+- back
+- tapOn: "City"
+- inputRandomText:
+    length: 10
+- back
+- tapOn: "State"
+- inputRandomText:
+    length: 10
+- back
+- tapOn: "Country"
+- tapOn: "Albania"
+- tapOn: "Next" 

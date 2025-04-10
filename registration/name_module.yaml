@@ -1,0 +1,12 @@
+appId: com.trackerteer.grgrider
+---
+
+- tapOn: "First Name"
+- inputRandomText:
+    length: 10
+- back
+- tapOn: "Last Name"
+- inputRandomText:
+    length: 10
+- back
+- tapOn: "Next"

@@ -1,0 +1,18 @@
+appId: com.trackerteer.grgrider
+---
+
+- launchApp
+- assertVisible:
+    element: My Account
+- tapOn: "Profile"
+- tapOn: "First Name"
+- inputText:
+    text: "Sample first name"
+    into: "First Name"
+- back
+- tapOn: "Last Name"
+- inputText:
+    text: "Sample last name"
+    into: "Last Name"
+- back
+- tapOn: "Update"

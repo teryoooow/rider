@@ -1,0 +1,26 @@
+appId: com.trackerteer.grgrider
+
+---
+
+- launchApp
+- assertVisible: 
+    text: "Home"
+- tapOn: 
+    text: "Tap to accept order"
+    index: 0
+- tapOn: "Accept"
+- runFlow: "../status_update/intransit_module.yaml"
+- assertVisible: "Map"
+- tapOn: "Back"
+- runFlow: "../chat/chat_module.yaml"
+- tapOn: "Update Status"
+- tapOn:  "Take Image"
+- tapOn:
+    id: "com.sec.android.app.camera:id/normal_center_button"  # Android default camera ID
+- tapOn: "OK"
+# - tapOn: ".*Comment.*"
+# - inputText:
+#     text: "In transit comment"
+# - back
+- tapOn: "Complete Order"
+

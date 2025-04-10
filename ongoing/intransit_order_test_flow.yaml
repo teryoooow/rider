@@ -1,0 +1,8 @@
+appId: com.trackerteer.grgrider
+---
+
+- launchApp
+- assertVisible:
+    text: "Status: IN TRANSIT"
+- tapOn: ".*VIEW.*"
+- runFlow: "../order/intransit_delivery_module.yaml"

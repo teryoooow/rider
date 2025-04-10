@@ -1,0 +1,15 @@
+appId: com.trackerteer.grgrider
+---
+
+- launchApp
+- repeat:
+    times: 10
+    commands:
+        - assertVisible:
+                text: "Sign up now"
+        - tapOn: "Sign up now"
+        - runFlow: "name_module.yaml"
+        - runFlow: "auth_module.yaml"
+        - runFlow: "address_module.yaml"
+        - runFlow: "requirements_module.yaml"
+        - tapOn: "OK"

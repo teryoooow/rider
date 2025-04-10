@@ -1,0 +1,46 @@
+appId: com.trackerteer.grgrider
+---
+
+- tapOn: "Drivers License Number/IC"
+- inputRandomNumber:
+    length: 11
+- tapOn: "Plate Number"
+- inputRandomText:
+    length: 3
+- inputRandomNumber:
+    length: 3
+- tapOn: "Model"
+- inputRandomText:
+    length: 10
+- tapOn: "Brand"
+- inputRandomText:
+    length: 10
+- tapOn: "Color"
+- inputRandomText:
+    length: 10
+- tapOn: ".*Attach Drivers.*"
+- tapOn: "Take Picture"
+- tapOn:
+    id: "com.sec.android.app.camera:id/normal_center_button"
+- tapOn: "OK"
+- tapOn: ".*Road Tax.*"
+- tapOn: "Take Picture"
+- tapOn:
+    id: "com.sec.android.app.camera:id/normal_center_button"
+- tapOn: "OK"
+- tapOn: ".*Certification of Registration.*"
+- tapOn: "Take Picture"
+- tapOn:
+    id: "com.sec.android.app.camera:id/normal_center_button"
+- tapOn: "OK"
+- back
+- tapOn: ".*Vaccination Card.*"
+- tapOn: "Take Picture"
+- tapOn:
+    id: "com.sec.android.app.camera:id/normal_center_button"
+- tapOn: "OK"
+- scrollUntilVisible:
+    element: ".*I have read.*"
+- tapOn:
+    id: "checkbox_agreed_terms_policy"
+- tapOn: "Submit Application"

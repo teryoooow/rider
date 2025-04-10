@@ -1,0 +1,15 @@
+appId: com.trackerteer.grgrider
+---
+
+- launchApp:
+    permissions:
+        notifications: unset # notification permission is unset
+        android.permission.ACCESS_FINE_LOCATION: deny # Android fine location permission is denied
+- assertVisible:
+    text: "Location Permission"
+- tapOn: "Proceed"
+- assertVisible:
+    text: ".*location.*"
+- tapOn: "While using the app"
+- assertVisible:
+    text: LOGIN
